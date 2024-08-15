@@ -1,1 +1,2 @@
 # RevipeApp
+This recipe app represents a significant milestone in my web development journey. It not only showcases my ability to integrate APIs and create responsive designs but also highlights my skills in creating interactive and visually appealing web applications. The app serves as both a portfolio piece and a practical tool for users, demonstrating my competence in modern web development practices.
