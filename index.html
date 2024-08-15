@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recipe App</title>
+  <!-- <-------------BoxIcons-------------> 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- <------Custom Css--------> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+    <input type="text" id="searchInput" oninput="searchRecipes()" placeholder="Search recipes...">
+    <select id="categoryFilter" onchange="filterByCategory()">
+      <option value="all">All</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+      <option value="dessert">Dessert</option>
+    </select>
+    <button onclick="toggleTheme()" id="themeSwitcher">Switch Theme</button>
+  </header>
+  <main id="recipeContainer">
+    <!-- Recipe cards will be dynamically inserted here -->
+  </main>
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalRecipeContent"></div>
+    </div>
+  </div>
+
+  <!-- <=============================footer==========================> -->
+  <footer>
+      <div class="footer-container">
+          <div class="footer-logo">
+              <h1>RecipeApp</h1>
+          </div>
+          <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="blogs.html">Blog post</a>
+              <a href="AboutMe.html">About Me</a>
+              
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"       class="social-icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://mail.google.com/" target="_blank"  class="social-icon"><i class='bx bx-envelope' ></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="social-icon"><i class='bx bxl-whatsapp' ></i></a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 RecipeApp. All rights reserved.</p>
+      </div>
+  </footer>
+  <!-- <-------------script tag-----------> 
+  <script src="script.js"></script>
+  <script src="footer.js"></script>
+  
+</body>
+</html>

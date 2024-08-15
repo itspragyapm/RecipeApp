@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.video, .article {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video:hover, .article:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+.description, .content {
+  padding: 1rem;
+}
+
+.description h3, .content h3 {
+  margin: 0;
+}
+
+.article img {
+  border-radius: 12px 12px 0 0;
+}
+
+.article h3 {
+  margin: 0.5rem 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+aside {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  .video, .article {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+
+
+.recipe-aside {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-aside h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.recipe-list, .tips-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-list li, .tips-list li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-text {
+  margin-top: 5px;
+}
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #282c34;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #61dafb;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #f5f5f5;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    color: #61dafb; /* Change color on hover */
+    transform: scale(1.5); /* Slightly enlarge icon on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        flex: 1;
+    }
+
+    .footer-links {
+        flex: 2;
+    }
+
+    .footer-social {
+        flex: 1;
+    }
+}
+/* CSS for Back-to-Top Button */
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #21a1f1;
+}
